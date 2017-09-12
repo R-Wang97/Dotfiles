@@ -4,9 +4,7 @@ filetype off                  " required
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='simple'
-let g:ctrlp_custom_ignore = 'node_modules\|.DS_Store\|'
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:syntastic_javascript_checkers = ['eslint']
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
@@ -42,6 +40,7 @@ set expandtab
 set nowrap
 set autoindent
 set number
+set relativenumber
 
 " Start NERDTree when opening file in vim
 autocmd vimenter * NERDTree
