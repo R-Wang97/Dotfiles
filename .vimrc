@@ -7,6 +7,7 @@ let g:airline_theme='simple'
 let g:ctrlp_custom_ignore = 'node_modules\|.DS_Store\|'
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
+let g:syntastic_javascript_checkers = ['eslint']
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
