@@ -3,9 +3,8 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='simple'
+let g:airline_theme='powerlineish'
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-let g:syntastic_javascript_checkers = ['eslint']
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
@@ -23,8 +22,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
-Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'valloric/youcompleteme'
+Plugin 'ntpeters/vim-better-whitespace'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -33,7 +33,7 @@ Plugin 'mxw/vim-jsx'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-syntax on 
+syntax enable 
 set background=dark
 colorscheme solarized
 
@@ -45,6 +45,8 @@ set nowrap
 set autoindent
 set number
 set relativenumber
+set mouse=a
+set backspace=indent,eol,start
 
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>

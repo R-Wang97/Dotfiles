@@ -9,7 +9,7 @@ DEFAULT_USER='ryan'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,4 +87,3 @@ alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
 alias vim='/usr/local/bin/vim/'
 alias projects='cd ~/Documents/Projects'
-alias mattermost='cd ~/go/src/github.com/mattermost'
