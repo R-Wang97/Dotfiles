@@ -11,6 +11,19 @@ DEFAULT_USER='ryan'
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator ram battery time)
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='↳ '
+
+POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
+
+POWERLEVEL9K_BATTERY_ICON=''
+POWERLEVEL9K_TIME_FORMAT='%D{\uf017 %H:%M \uf073 %d.%m.%y}'
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -53,9 +66,10 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nyan osx sublime)
+plugins=(git osx sublime)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -82,8 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
 alias vim='/usr/local/bin/vim/'
 alias projects='cd ~/Documents/Projects'
+alias school='cd ~/OneDrive\ -\ University\ of\ Waterloo/University'
+
