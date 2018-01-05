@@ -22,8 +22,16 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='↳ '
 
 POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
-
+POWERLEVEL9K_CUSTOM_ITUNES_STATUS_BACKGROUND='cyan'
 POWERLEVEL9K_BATTERY_ICON=''
+POWERLEVEL9K_BATTERY_LOW_BACKGROUND='red'
+POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND='green'
+POWERLEVEL9K_BATTERY_CHARGED_BACKGROUND='green'
+POWERLEVEL9K_BATTERY_DISCONNECTED_BACKGROUND='004'
+POWERLEVEL9K_BATTERY_LOW_FOREGROUND='white'
+POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND='white'
+POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND='white'
+POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND='white'
 POWERLEVEL9K_TIME_FORMAT='%D{\uf017 %H:%M \uf073 %d.%m.%y}'
 
 # Uncomment the following line to use case-sensitive completion.
@@ -102,5 +110,6 @@ alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
 alias vim='/usr/local/bin/vim/'
 alias projects='cd ~/Documents/Projects'
-alias school='cd ~/OneDrive\ -\ University\ of\ Waterloo/University'
+alias school='cd ~/OneDrive\ -\ University\ of\ Waterloo/University/3A'
+alias csServer='ssh s495wang@linux.student.cs.uwaterloo.ca'
 
